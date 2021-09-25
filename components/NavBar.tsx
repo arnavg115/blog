@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState } from "react";
 
 export const NavBar = () => {
@@ -5,26 +6,24 @@ export const NavBar = () => {
   return (
     <div>
       <nav className="nav">
-        <a href="/">
+        <Link href="/">
           <h1>Arnav's Blog</h1>
-        </a>
+        </Link>
         <ul className="items">
           <li>
-            <a className="active" href="#">
-              Home
-            </a>
+            <Link href="#">Home</Link>
           </li>
           <li>
-            <a href="#">About</a>
+            <Link href="#">About</Link>
           </li>
           <li>
-            <a href="#">Services</a>
+            <Link href="#">Services</Link>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <Link href="#">Contact</Link>
           </li>
           <li>
-            <a href="#">Feedback</a>
+            <Link href="#">Feedback</Link>
           </li>
         </ul>
         <div className="hamburger">
@@ -41,21 +40,21 @@ export const NavBar = () => {
 
       <div className="external" style={{ display: !ham ? "none" : "grid" }}>
         <li>
-          <a className="active" href="#">
+          <Link className="active" href="#">
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#">About</a>
+          <Link href="#">About</Link>
         </li>
         <li>
-          <a href="#">Services</a>
+          <Link href="#">Services</Link>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <Link href="#">Contact</Link>
         </li>
         <li>
-          <a href="#">Feedback</a>
+          <Link href="#">Feedback</Link>
         </li>
       </div>
     </div>
