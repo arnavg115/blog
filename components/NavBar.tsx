@@ -40,9 +40,7 @@ export const NavBar = () => {
 
       <div className="external" style={{ display: !ham ? "none" : "grid" }}>
         <li>
-          <Link className="active" href="#">
-            Home
-          </Link>
+          <Link href="#">Home</Link>
         </li>
         <li>
           <Link href="#">About</Link>
