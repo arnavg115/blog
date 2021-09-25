@@ -1,7 +1,16 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import "../styles/globals.css";
+import { ThemeProvider } from "theme-ui";
+import theme from "../theme";
+import { AppProps } from "next/dist/shared/lib/router/router";
+import { NavBar } from "../components/NavBar";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <ThemeProvider theme={theme}>
+      <NavBar />
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
 }
-export default MyApp
+
+export default MyApp;
